@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import {
   Eye,
   EyeOff,
-  Loader2,
+  Loader,
   Lock,
   Mail,
   MessageSquare,
@@ -127,7 +127,7 @@ const Login = () => {
             >
               {isLoggingIn ? (
                 <>
-                  <Loader2 className="size-5 animate-spin" />
+                  <Loader className="size-5 animate-spin" />
                   Loading...
                 </>
               ) : (
