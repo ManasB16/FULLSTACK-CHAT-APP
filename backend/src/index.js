@@ -5,7 +5,7 @@ import { configDotenv } from "dotenv";
 import { connectDB } from "./libs/db.js";
 import cookieParser from "cookie-parser"; // Default import
 import errorHandler from "./middlewares/error.middleware.js";
-import ENV from "./configs/ENV.js";
+import ENV from "./configs/env.js";
 import bodyParser from "body-parser";
 import cors from "cors";
 import { app, server } from "./libs/socket.js";

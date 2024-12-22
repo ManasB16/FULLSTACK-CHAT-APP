@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import ENV from "../configs/ENV.js";
+import ENV from "../configs/env.js";
 
 const generateTokenAndSetCookie = (res, userId) => {
   // Generating jwt token

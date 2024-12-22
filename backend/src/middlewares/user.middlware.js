@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
 import { ErrorResponse } from "../utils/errorResp.js";
 import asyncHandler from "../utils/asyncHandler.js";
-import ENV from "../configs/ENV.js";
+import ENV from "../configs/env.js";
 
 //Authenticate User
 const userAuthentication = asyncHandler(async (req, res, next) => {

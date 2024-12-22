@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import asyncHandler from "../utils/asyncHandler.js";
 import { ErrorResponse } from "../utils/errorResp.js";
-import ENV from "../configs/ENV.js";
+import ENV from "../configs/env.js";
 
 export const connectDB = asyncHandler(async () => {
   const connect = await mongoose.connect(ENV.MONGO_URI);
