@@ -23,28 +23,29 @@ const SignUp = () => {
 
   const { signUp, isSigningUp } = useAuthStore();
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const passwordRegex =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // const passwordRegex =
+  //   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-  const validateForm = () => {
-    if (!emailRegex.test(formData.email)) {
-      return toast.error("Please enter a valid email address.");
-    }
+  // const validateForm = () => {
+  //   if (!emailRegex.test(formData.email)) {
+  //     return toast.error("Please enter a valid email address.");
+  //   }
 
-    if (!passwordRegex.test(formData.password)) {
-      return toast.error(
-        "Password must be at least 8 characters long and include one uppercase letter, one lowercase letter, one number, and one special character."
-      );
-    }
+  //   if (!passwordRegex.test(formData.password)) {
+  //     return toast.error(
+  //       "Password must be at least 8 characters long and include one uppercase letter, one lowercase letter, one number, and one special character."
+  //     );
+  //   }
 
-    return true;
-  };
+  //   return true;
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const success = validateForm();
-    if (success) signUp(formData);
+    // const success = validateForm();
+    // if (success)
+    signUp(formData);
   };
 
   return (
